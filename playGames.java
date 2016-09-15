@@ -41,6 +41,15 @@ public class playGames
 		userInputString = JOptionPane.showInputDialog("What do you think the sum of the dice is?");
 		userNumGuess = Integer.parseInt(userInputString);
 		
+		if (userNumGuess == totalSumOfDice)
+		{
+			JOptionPane.showMessageDialog(null, "You are Correct! The sum of the dice is " + totalSumOfDice + ".");
+		}
+		else
+		{
+			JOptionPane.showMessageDialog(null, "You are Incorrect! The real sum of the dice is " + totalSumOfDice + ".");
+		}
+		
 	}
 	public static int calcSumOfDice(int d4, int d6, int d8, int d10, int d12, int d20)
 	{
